@@ -24,7 +24,7 @@
       <VBox alignment="CENTER" prefHeight="259.0" prefWidth="665.0" spacing="10.0" BorderPane.alignment="CENTER">
          <children>
             <Label maxWidth="200.0" prefWidth="200.0" text="Nickname" />
-            <TextField fx:id="txtNick" maxWidth="200.0" prefWidth="200.0" />
+            <TextField fx:id="txtNickname" maxWidth="200.0" prefWidth="200.0" />
             <Button maxWidth="200.0" mnemonicParsing="false" onAction="#crearSala" prefWidth="200.0" text="Crear sala" />
             <Button maxWidth="200.0" mnemonicParsing="false" onAction="#unirSala" prefWidth="200.0" text="Unirme a una sala" />
             <Button maxWidth="200.0" mnemonicParsing="false" onAction="#jugarSolo" prefWidth="200.0" text="Jugar en solitario" />
