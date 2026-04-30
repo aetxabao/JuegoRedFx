@@ -7,6 +7,8 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+import edu.masanz.da.cmnf.service.NavigationService;
+
 public class Main extends Application {
 
     public static void main(String[] args) {
@@ -15,8 +17,12 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) {
+
+        NavigationService nav = edu.masanz.da.cmnf.service.NavigationService.getInstance();
+        nav.setStage(stage);
+
         FXMLLoader fxmlLoader = new FXMLLoader(getClass()
-                .getResource("launcher.fxml"));
+                .getResource("/edu/masanz/da/juegored/view/launcher.fxml"));
         Scene scene = null; // crear la escena
         try {
             scene = new Scene(fxmlLoader.load());
