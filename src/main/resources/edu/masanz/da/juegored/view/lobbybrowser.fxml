@@ -24,11 +24,11 @@
    <center>
       <TableView fx:id="tbvSalas" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
         <columns>
-          <TableColumn prefWidth="123.0" text="Nombre de sala" />
-          <TableColumn prefWidth="115.0" text="Jugadores" />
-            <TableColumn prefWidth="115.0" text="Privacidad" />
-            <TableColumn prefWidth="115.0" text="Dificultad" />
-            <TableColumn prefWidth="115.0" text="Ping" />
+          <TableColumn fx:id="colNombre" editable="false" prefWidth="120.0" resizable="false" style="-fx-text-align: center;" text="Nombre de sala" />
+          <TableColumn fx:id="colJugadores" editable="false" prefWidth="120.0" resizable="false" text="Jugadores" />
+            <TableColumn fx:id="colPrivacidad" editable="false" prefWidth="120.0" resizable="false" text="Privacidad" />
+            <TableColumn fx:id="colDificultad" editable="false" prefWidth="120.0" resizable="false" text="Dificultad" />
+            <TableColumn fx:id="colPing" editable="false" prefWidth="120.0" resizable="false" text="Ping" />
         </columns>
       </TableView>
    </center>
