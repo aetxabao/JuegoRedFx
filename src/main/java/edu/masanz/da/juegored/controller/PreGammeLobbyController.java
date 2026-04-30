@@ -1,6 +1,7 @@
 package edu.masanz.da.juegored.controller;
 
 import edu.masanz.da.juegored.model.UserSession;
+import edu.masanz.da.juegored.service.NavigationService;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -37,20 +38,7 @@ public class PreGammeLobbyController {
 
     @FXML
     void abandonar(ActionEvent event) {
-
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/edu/masanz/da/juegored/view/launcher.fxml"));
-
-        Parent root = null;
-        try {
-            root = loader.load();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        Scene scene = new Scene(root);
-
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setScene(scene);
-        stage.show();
+        NavigationService.getInstance().navigateTo("launcher.fxml");
     }
 
 }
